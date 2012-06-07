@@ -41,7 +41,7 @@ public:
 	{
 		int out, in;
 
-		for(out=nElems1; out>1; out--)	//outer loop (backward)
+		for(out=nElems; out>1; out--)	//outer loop (backward) 5/5/12 check me out
 		  for(in=0; in<out; in++)	//inner loop
 		     if( v[in] > v[in+1])	//out of order?
 			swap(in, in+1);		//swap them
